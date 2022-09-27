@@ -17,6 +17,10 @@ class Body extends StatelessWidget {
           RecomendesCards(),
           TitleWithBtn(title: "Featured", press: () {}),
           Container(
+            margin: EdgeInsets.only(
+                left: nexDefaultPadding,
+                top: nexDefaultPadding / 2,
+                bottom: nexDefaultPadding / 2),
             width: size.width * 0.8,
             height: 185,
             decoration: BoxDecoration(
