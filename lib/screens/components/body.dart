@@ -16,6 +16,14 @@ class Body extends StatelessWidget {
           TitleWithBtn(title: "Recommeded", press: () {}),
           RecomendesCards(),
           TitleWithBtn(title: "Featured", press: () {}),
+          Container(
+            width: size.width * 0.8,
+            height: 185,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                image: DecorationImage(
+                    image: AssetImage('assets/images/bottom_img_1.png'))),
+          )
         ],
       ),
     );
