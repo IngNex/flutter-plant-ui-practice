@@ -19,10 +19,12 @@ class TitleWithBtn extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           TitleWitchCustomUnderLine(text: title),
-          FlatButton(
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            color: nexPrimaryColor,
+          TextButton(
+            style: TextButton.styleFrom(
+              backgroundColor: nexPrimaryColor,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20)),
+            ),
             onPressed: () => press,
             child: Text(
               "Mas",
