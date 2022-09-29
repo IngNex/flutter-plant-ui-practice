@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:front_plant_app_flutter_ui/constants.dart';
+import 'package:front_plant_app_flutter_ui/screens/details/details_object.dart';
 
 class RecomendesCards extends StatelessWidget {
   const RecomendesCards({
@@ -17,7 +18,14 @@ class RecomendesCards extends StatelessWidget {
             title: "samantha",
             country: "Rusia",
             price: 400,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsObject(),
+                ),
+              );
+            },
           ),
           RecomendedCard(
             image: "assets/images/image_2.png",
