@@ -11,10 +11,10 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(
-          left: nexDefaultPadding,
-          right: nexDefaultPadding,
+          left: nexDefaultPadding * 2,
+          right: nexDefaultPadding * 2,
           bottom: nexDefaultPadding),
-      height: 80,
+      height: 60,
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [

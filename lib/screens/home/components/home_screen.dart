@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:front_plant_app_flutter_ui/components/bottomNavBar.dart';
 import 'package:front_plant_app_flutter_ui/constants.dart';
-import 'package:front_plant_app_flutter_ui/screens/components/body.dart';
+import 'package:front_plant_app_flutter_ui/screens/home/components/body.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
