@@ -32,14 +32,28 @@ class RecomendesCards extends StatelessWidget {
             title: "angelica",
             country: "Rusia",
             price: 600,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsObject(),
+                ),
+              );
+            },
           ),
           RecomendedCard(
             image: "assets/images/image_3.png",
             title: "Lirias",
             country: "Rusia",
             price: 800,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsObject(),
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -73,7 +87,7 @@ class RecomendedCard extends StatelessWidget {
       child: Column(children: [
         Image.asset(image),
         GestureDetector(
-          onTap: () => press,
+          onTap: () => press(),
           child: Container(
             padding: EdgeInsets.all(nexDefaultPadding / 2),
             decoration: BoxDecoration(
