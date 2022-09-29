@@ -12,6 +12,10 @@ class HomeScreen extends StatelessWidget {
       appBar: buildAppBar(),
       body: Body(),
       bottomNavigationBar: Container(
+        padding: EdgeInsets.only(
+            left: nexDefaultPadding,
+            right: nexDefaultPadding,
+            bottom: nexDefaultPadding),
         height: 80,
         decoration: BoxDecoration(
           color: Colors.white,
@@ -23,6 +27,21 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
         ),
+        child:
+            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset('assets/icons/flower.svg'),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset('assets/icons/heart-icon.svg'),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset('assets/icons/user-icon.svg'),
+          ),
+        ]),
       ),
     );
   }
