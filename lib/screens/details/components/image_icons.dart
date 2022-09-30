@@ -34,7 +34,8 @@ class ImageAndIcons extends StatelessWidget {
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            icon: SvgPicture.asset(imgPicture),
+                            icon:
+                                SvgPicture.asset('assets/icons/back_arrow.svg'),
                           ),
                         ),
                         Spacer(),
@@ -63,7 +64,7 @@ class ImageAndIcons extends StatelessWidget {
                     image: DecorationImage(
                       alignment: Alignment.centerLeft,
                       fit: BoxFit.cover,
-                      image: AssetImage('assets/images/img.png'),
+                      image: AssetImage(imgPicture),
                     ),
                   ),
                 ),
