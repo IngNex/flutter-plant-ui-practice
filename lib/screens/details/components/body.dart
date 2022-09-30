@@ -6,6 +6,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:front_plant_app_flutter_ui/constants.dart';
 import 'package:front_plant_app_flutter_ui/screens/details/components/icon_container.dart';
 import 'package:front_plant_app_flutter_ui/screens/details/components/image_icons.dart';
+import 'package:front_plant_app_flutter_ui/screens/details/components/title_price.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -17,15 +18,11 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           ImageAndIcons(),
-          Row(
-            children: [
-              RichText(
-                text: TextSpan(
-                  children: [],
-                ),
-              ),
-            ],
-          )
+          TitlePriceData(
+            title: "Angelica",
+            country: "Russia",
+            price: 440,
+          ),
         ],
       ),
     );

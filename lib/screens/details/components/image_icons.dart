@@ -37,7 +37,7 @@ class ImageAndIcons extends StatelessWidget {
                                 SvgPicture.asset('assets/icons/back_arrow.svg'),
                           ),
                         ),
-                        Divider(),
+                        Spacer(),
                         iconContainer(svgPicture: 'assets/icons/sun.svg'),
                         iconContainer(svgPicture: 'assets/icons/icon_2.svg'),
                         iconContainer(svgPicture: 'assets/icons/icon_3.svg'),
