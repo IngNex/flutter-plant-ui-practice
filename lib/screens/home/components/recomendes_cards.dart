@@ -22,21 +22,31 @@ class RecomendesCards extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsObject(),
+                  builder: (context) => DetailsObject(
+                    imgGlobal: "assets/images/image_1.png",
+                    titleGlobal: "samantha",
+                    countryGlobal: "Rusia",
+                    priceGlobal: 400,
+                  ),
                 ),
               );
             },
           ),
           RecomendedCard(
             image: "assets/images/image_2.png",
-            title: "angelica",
+            title: "Angelica",
             country: "Rusia",
             price: 600,
             press: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsObject(),
+                  builder: (context) => DetailsObject(
+                    imgGlobal: "assets/images/image_2.png",
+                    titleGlobal: "Angelica",
+                    countryGlobal: "Rusia",
+                    priceGlobal: 600,
+                  ),
                 ),
               );
             },
@@ -50,7 +60,12 @@ class RecomendesCards extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsObject(),
+                  builder: (context) => DetailsObject(
+                    imgGlobal: "assets/images/image_3.png",
+                    titleGlobal: "Lirias",
+                    countryGlobal: "Rusia",
+                    priceGlobal: 800,
+                  ),
                 ),
               );
             },

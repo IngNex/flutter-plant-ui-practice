@@ -6,8 +6,9 @@ import 'package:front_plant_app_flutter_ui/screens/details/components/icon_conta
 class ImageAndIcons extends StatelessWidget {
   const ImageAndIcons({
     Key? key,
+    required this.imgPicture,
   }) : super(key: key);
-
+  final String imgPicture;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -33,8 +34,7 @@ class ImageAndIcons extends StatelessWidget {
                             onPressed: () {
                               Navigator.pop(context);
                             },
-                            icon:
-                                SvgPicture.asset('assets/icons/back_arrow.svg'),
+                            icon: SvgPicture.asset(imgPicture),
                           ),
                         ),
                         Spacer(),

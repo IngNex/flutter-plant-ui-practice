@@ -10,19 +10,23 @@ import 'package:front_plant_app_flutter_ui/screens/details/components/image_icon
 import 'package:front_plant_app_flutter_ui/screens/details/components/title_price.dart';
 
 class Body extends StatelessWidget {
-  const Body({super.key});
-
+  const Body(
+      {super.key, this.imgB, this.titleB, this.countryB, required this.priceB});
+  final imgB, titleB, countryB;
+  final int priceB;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Column(
         children: [
-          ImageAndIcons(),
+          ImageAndIcons(
+            imgPicture: imgB,
+          ),
           TitlePriceData(
-            title: "Angelica",
-            country: "Russia",
-            price: 440,
+            title: titleB,
+            country: countryB,
+            price: priceB,
           ),
           buttonBuyDescription(),
         ],
