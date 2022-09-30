@@ -11,8 +11,12 @@ import 'package:front_plant_app_flutter_ui/screens/details/components/title_pric
 
 class Body extends StatelessWidget {
   const Body(
-      {super.key, this.imgB, this.titleB, this.countryB, required this.priceB});
-  final imgB, titleB, countryB;
+      {super.key,
+      required this.imgB,
+      required this.titleB,
+      required this.countryB,
+      required this.priceB});
+  final String imgB, titleB, countryB;
   final int priceB;
   @override
   Widget build(BuildContext context) {
